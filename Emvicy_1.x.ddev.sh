@@ -16,9 +16,8 @@ echo -e "\ninstalling...";
 $xGit clone --branch "$sBranch" https://github.com/Emvicy/Emvicy.git "$sAppDirName";
 
 cd "$sAppDirName";
-
-# clear cache
 $xPhp emvicy up;
+cd "$sHere";
 
 #------------------------------------------------------------
 # install modules via git
@@ -46,15 +45,15 @@ $xGit clone --branch 1.x \
 https://github.com/Emvicy/Paginator.git \
 Paginator;
 
+cd "$sHere";
+
 #------------------------------------------------------------
 # done
 
 cd "$sAppDirName";
 
-# clear cache
+$xPhp emvicy up;
 $xPhp emvicy cc;
-
-# datatypes
 $xPhp emvicy dt;
 
 cd "$sHere";
