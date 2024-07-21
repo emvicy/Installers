@@ -1,0 +1,13 @@
+.git
+.idea
+.bak
+.trash
+.env
+.test
+*.sql
+.phpstorm.meta.php
+gen
+*.tar.gz
+_gitPull.sh
+_gitPush.sh
+Changelog.md
