@@ -3,7 +3,7 @@
 sAppName="Emvicy";
 sBranch="1.x";
 
-sAppDirName="$sAppName_$sBranch";
+sAppDirName="${sAppName}_${sBranch}";
 sModuleDir=`realpath "./modules/"`;
 xPhp=`type -p php`;
 xGit=`type -p git`;
