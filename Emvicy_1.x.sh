@@ -25,11 +25,6 @@ cd "$sHere";
 echo "install modules via git...";
 cd "$sModuleDir";
 
-## myMVC_module_Captcha
-#/usr/bin/git clone --branch 1.0.x \
-#https://github.com/gueff/myMVC_module_Captcha.git \
-#Captcha;
-
 # Email
 $xGit clone --branch 1.x \
 https://github.com/Emvicy/Email.git \
