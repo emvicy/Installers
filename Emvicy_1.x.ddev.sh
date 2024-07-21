@@ -46,11 +46,6 @@ $xGit clone --branch 1.x \
 https://github.com/Emvicy/Paginator.git \
 Paginator;
 
-# WS
-$xGit clone --branch 1.x \
-https://$GAT@github.com/Emvicy/Ws.git \
-Ws;
-
 #------------------------------------------------------------
 # done
 
