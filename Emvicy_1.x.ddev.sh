@@ -12,10 +12,10 @@ sHere=`pwd`;
 #------------------------------------------------------------
 
 /usr/bin/clear;
-$xGit clone --branch 1.x https://github.com/Emvicy/Emvicy.git "$sAppDirName";
+$xGit clone --branch "$sBranch" https://github.com/Emvicy/Emvicy.git "$sAppDirName";
 
 cd "$sAppDirName";
-$xGit clone --branch 1x_ddev https://github.com/Emvicy/Emvicy.git .ddev;
+$xGit clone --branch 1x_ddev https://github.com/emvicy/Installers.git .ddev;
 
 
 
