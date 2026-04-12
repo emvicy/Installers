@@ -31,14 +31,6 @@ Emvicy_2.x_Foo
     public
 ~~~
 
-**Requirements**
-
-- git
-- docker
-- ddev
-- bash / Linux
-- curl
-
 **Includes**
 
 - All official _stable_ modules are included and ready to use  
@@ -49,3 +41,11 @@ Emvicy_2.x_Foo
   - Phormix https://github.com/emvicy/Phormix
   - Ws https://github.com/emvicy/Ws
 - All 3rd party libraries are getting installed during that process. 
+
+**Requirements**
+
+- git
+- docker
+- ddev
+- bash
+- curl
