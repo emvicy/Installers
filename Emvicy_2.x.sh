@@ -6,10 +6,21 @@
 # - ddev
 # - docker
 #-----------------------------------------------------------------------------------------------------------------------
+# usage
+#     bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh
+#-----------------------------------------------------------------------------------------------------------------------
 
 clear;
 
-read -p "Emvicy Project Name (alpha characters only): " -r
+read -p "Emvicy2 Project Name (alpha characters only): " -r
+
+if [[ -z $REPLY ]]; then
+    echo "You must at least enter a name for project.";
+    echo "run this bash script this way:";
+    echo -e "\tbash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh);\n";
+    echo -e "Abort.\n\n";
+    exit;
+fi;
 
 # alpha only
 if [[ $REPLY =~ [^[:alpha:]] ]]; then
