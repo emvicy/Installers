@@ -30,6 +30,7 @@ Emvicy_2.x_Foo
         Foo
     public
 ~~~
+- will be at least callable via ddev like `https://emvicy-2.x-foo.ddev.site`
 
 **Includes**
 
