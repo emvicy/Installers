@@ -4,7 +4,18 @@
 
 ## Emvicy2
 
-This command installs Emvicy2 at the location where it is called.
+This command installs Emvicy2 at the location where it is called and runs it as a ddev project.
+
+A bash prompt is asking for:
+
+- Module Name
+- Project Name
+
+**Requirements**
+
+- git
+- docker
+- ddev
 
 ~~~bash
 bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh);
