@@ -12,30 +12,43 @@
 
 clear;
 
-read -p "Emvicy2 Project Name (alpha characters only): " -r
+# Module Name
+read -p "Emvicy2 primary Module Name (Foo): " sModuleName;
+if [[ -z $sModuleName ]]; then sModuleName="Foo"; fi;
+if [[ -z $sModuleName ]]; then
+    echo "You must at least enter a name for module.";
+    echo "run this bash script this way:";
+    echo -e "\tbash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh);\n";
+    echo -e "Abort.\n\n";
+    exit;
+fi;
+if [[ $sModuleName =~ [^[:alpha:]] ]]; then
+    echo -e "The Module Name contains non-alpha characters.\nAbort.\n\n";
+    exit;
+fi
 
-if [[ -z $REPLY ]]; then
-    echo "You must at least enter a name for project.";
+# Project Name
+read -p "Emvicy2 Project Name (Emvicy_2.x_$sModuleName): " sProjectName;
+if [[ -z $sProjectName ]]; then sProjectName="Emvicy_2.x_$sModuleName"; fi;
+if [[ -z $sProjectName ]]; then
+    echo "You must at least enter a name for Project.";
     echo "run this bash script this way:";
     echo -e "\tbash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh);\n";
     echo -e "Abort.\n\n";
     exit;
 fi;
 
-# alpha only
-if [[ $REPLY =~ [^[:alpha:]] ]]; then
-    echo -e "The text contains non-alpha characters.\nAbort.\n\n";
-    exit;
-fi
-
 # strtolower, ucfirst
-sProjectName=${REPLY,,};
-sProjectName=${sProjectName^};
+sModuleName=${REPLY,,};
+sModuleName=${sModuleName^};
+
+#-----------------------------------------------------------------------------------------------------------------------
 
 xGit=`type -p git`;
 xDdev=`type -p ddev`;
 
 #-----------------------------------------------------------------------------------------------------------------------
+echo "Module Name is: $sModuleName";
 echo "Project Name is: $sProjectName";
 echo "Starting Installation Process.";
 
@@ -50,9 +63,9 @@ $xDdev config --project-type=php --docroot=public --webserver-type=apache-fpm --
 cd "$sProjectName/";
 $xDdev start;
 
-## install a primary module named "$sProjectName"
+## install a primary module named "$sModuleName"
 $xDdev exec "php emvicy";
-$xDdev exec "php emvicy module:add $sProjectName primary";
+$xDdev exec "php emvicy module:add $sModuleName primary";
 $xDdev exec "php emvicy";
 
 #-----------------------------------------------------------------------------------------------------------------------
