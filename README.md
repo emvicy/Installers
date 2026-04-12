@@ -2,14 +2,30 @@
 # Emvicy Installers 
 
 
-## Emvicy2
+## Emvicy2 `ddev`
 
-This command installs Emvicy2 at the location where it is called and runs it as a ddev project.
+~~~bash
+bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x_ddev.sh);
+~~~
+
+🛈 This command installs Emvicy2 at the location where it gets called and configures and runs it as a ddev project.
 
 A bash prompt is asking for:
 
-- Module Name
+- (primary) Module Name
 - Project Name
+
+**Example**
+
+_Module Name=`Foo`, Project Name=`Emvicy_2.x_Foo`_  
+~~~
+Emvicy_2.x_Foo
+    application
+    config
+    modules
+        Foo
+    public
+~~~
 
 **Requirements**
 
@@ -17,14 +33,13 @@ A bash prompt is asking for:
 - docker
 - ddev
 
-~~~bash
-bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh);
-~~~
+**Includes**
 
-All official _stable_ modules are included and ready to use  
-- Email https://github.com/emvicy/Email
-- Idolon https://github.com/emvicy/Idolon
-- OpenApi https://github.com/emvicy/OpenApi
-- Paginator https://github.com/emvicy/Paginator
-- Phormix https://github.com/emvicy/Phormix
-- Ws https://github.com/emvicy/Ws
+- All official _stable_ modules are included and ready to use  
+  - Email https://github.com/emvicy/Email
+  - Idolon https://github.com/emvicy/Idolon
+  - OpenApi https://github.com/emvicy/OpenApi
+  - Paginator https://github.com/emvicy/Paginator
+  - Phormix https://github.com/emvicy/Phormix
+  - Ws https://github.com/emvicy/Ws
+- All 3rd party libraries are getting installed during that process. 
