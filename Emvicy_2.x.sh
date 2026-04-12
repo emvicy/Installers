@@ -67,7 +67,6 @@ $xDdev start;
 $xDdev exec "php emvicy";
 $xDdev exec "php emvicy module:add $sModuleName primary";
 $xDdev exec "php emvicy";
-exit;
 
 #-----------------------------------------------------------------------------------------------------------------------
 ## install further modules
