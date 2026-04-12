@@ -36,6 +36,7 @@ Emvicy_2.x_Foo
 - git
 - docker
 - ddev
+- bash / Linux
 
 **Includes**
 
