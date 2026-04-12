@@ -4,6 +4,10 @@
 
 ## Emvicy2 `ddev`
 
+**disclaimer**  
+- I do not accept responsibility for any damage, errors or anything whatsoever caused by running or using this script.
+- You use this script at your own risk.
+
 ~~~bash
 bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x_ddev.sh);
 ~~~
