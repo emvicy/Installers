@@ -37,6 +37,7 @@ Emvicy_2.x_Foo
 - docker
 - ddev
 - bash / Linux
+- curl
 
 **Includes**
 
