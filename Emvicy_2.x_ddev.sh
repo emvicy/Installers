@@ -45,13 +45,12 @@ $xGit clone --branch 2.x https://github.com/Emvicy/Emvicy.git "$sProjectName";
 cd "$sProjectName/";
 $xDdev config --project-type=php --docroot=public --webserver-type=apache-fpm --php-version=8.5
 
-# run ddev
 cd "$sProjectName/";
-$xDdev start;
+$xDdev add-on get ddev/ddev-phpmyadmin;
+$xDdev add-on get ddev/ddev-cron;
 
-cd "$sProjectName/";
-$xDdev get ddev/ddev-phpmyadmin;
-$xDdev get ddev/ddev-cron;
+# run ddev
+$xDdev start;
 
 ## install a primary module named "$sModuleName"
 $xDdev exec "php emvicy";
