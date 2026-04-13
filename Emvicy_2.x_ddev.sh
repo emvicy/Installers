@@ -49,6 +49,7 @@ $xDdev config --project-type=php --docroot=public --webserver-type=apache-fpm --
 cd "$sProjectName/";
 $xDdev start;
 
+cd "$sProjectName/";
 $xDdev get ddev/ddev-phpmyadmin;
 $xDdev get ddev/ddev-cron;
 
