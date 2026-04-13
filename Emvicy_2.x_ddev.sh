@@ -49,7 +49,7 @@ $xDdev config --project-type=php --docroot=public --webserver-type=apache-fpm --
 cd "$sProjectName/";
 $xDdev start;
 
-$xDdev ddev get ddev/ddev-phpmyadmin;
+$xDdev get ddev/ddev-phpmyadmin;
 $xDdev get ddev/ddev-cron;
 
 ## install a primary module named "$sModuleName"
