@@ -65,7 +65,6 @@ $xGit clone --branch 1.x https://github.com/emvicy/Idolon.git Idolon;
 $xGit clone --branch 3.x https://github.com/emvicy/OpenApi.git OpenApi;
 $xGit clone --branch 2.x https://github.com/emvicy/Paginator.git Paginator;
 $xGit clone --branch 1.x https://github.com/emvicy/Phormix.git Phormix;
-$xGit clone --branch 1.x https://github.com/emvicy/RouteDB.git RouteDB;
 $xGit clone --branch 2.x https://github.com/emvicy/Ws.git Ws;
 
 cd ../;
