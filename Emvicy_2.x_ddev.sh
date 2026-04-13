@@ -7,7 +7,7 @@
 # - docker
 #-----------------------------------------------------------------------------------------------------------------------
 # usage
-#     bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x.sh)
+#     bash <(curl -s https://emvicy.com/Installers/Emvicy_2.x_ddev.sh)
 #-----------------------------------------------------------------------------------------------------------------------
 
 clear;
