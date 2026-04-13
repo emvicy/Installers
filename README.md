@@ -11,7 +11,7 @@
 
 _🛈 This command installs Emvicy2 at the location where it gets called and configures and runs it as a ddev project._  
 ~~~bash
-bash <(curl -s https://emvicy.com/Installers/Emvicy_2.x_ddev.sh);
+bash <(curl -s https://raw.githubusercontent.com/emvicy/Installers/refs/heads/main/Emvicy_2.x_ddev.sh);
 ~~~
 
 A bash prompt will ask for:
