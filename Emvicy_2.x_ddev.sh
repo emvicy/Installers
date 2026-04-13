@@ -44,8 +44,6 @@ $xGit clone --branch 2.x https://github.com/Emvicy/Emvicy.git "$sProjectName";
 ## prepare ddev
 cd "$sProjectName/";
 $xDdev config --project-type=php --docroot=public --webserver-type=apache-fpm --php-version=8.5
-
-cd "$sProjectName/";
 $xDdev add-on get ddev/ddev-phpmyadmin;
 $xDdev add-on get ddev/ddev-cron;
 
